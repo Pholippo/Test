@@ -8,10 +8,14 @@ from openai import OpenAI
 from streamlit_lottie import st_lottie
 import requests
 
+
+
+
 import os
 
 
-client = OpenAI(api_key=os.environ["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"])
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+
 
 # --- HACKER-THEME: Dark Mode + Matrix Green + Monospace
 st.set_page_config(page_title="Kreuzwort-KI", layout="wide", page_icon="💻")
